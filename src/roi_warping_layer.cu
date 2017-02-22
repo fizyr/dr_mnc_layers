@@ -4,11 +4,15 @@
 // Copyright (c) 2016, Haozhi Qi
 // Licensed under The MIT License [see LICENSE for details]
 // --------------------------------------------------------
-#include <cfloat>
-#include "caffe/fast_rcnn_layers.hpp"
+
+#include "fast_rcnn_layers.hpp"
+
 #include <thrust/reduce.h>
 #include <thrust/device_vector.h>
 #include <thrust/copy.h>
+
+#include <cfloat>
+
 using std::max;
 using std::min;
 
