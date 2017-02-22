@@ -36,3 +36,5 @@ target_link_libraries(mnc
 	${CUDA_LIBRARIES}
 	${YamlCpp_LIBRARIES}
 )
+
+install(TARGETS mnc LIBRARY DESTINATION lib/caffe/layers)
