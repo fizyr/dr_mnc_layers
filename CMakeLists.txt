@@ -35,6 +35,8 @@ cuda_add_library(mnc MODULE
 	src/roi_warping_layer.cu
 	src/smooth_L1_loss_layer.cpp
 	src/smooth_L1_loss_layer.cu
+	src/sigmoid_cross_entropy_loss_layer.cpp
+	src/sigmoid_cross_entropy_loss_layer.cu
 )
 
 target_link_libraries(mnc
