@@ -7,9 +7,6 @@ find_package(Caffe REQUIRED)
 find_package(CUDA REQUIRED)
 find_package(YamlCpp REQUIRED)
 
-set(CUDA_HOST_COMPILER g++-5)
-set(CUDA_PROPAGATE_HOST_FLAGS off)
-
 # We compile for Pascal architecture
 list(APPEND CUDA_NVCC_FLAGS "-gencode=arch=compute_60,code=compute_60")
 list(APPEND CUDA_NVCC_FLAGS "-gencode=arch=compute_61,code=compute_61")
