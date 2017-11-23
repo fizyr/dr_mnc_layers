@@ -11,6 +11,7 @@ find_package(YamlCpp REQUIRED)
 list(APPEND CUDA_NVCC_FLAGS "-gencode=arch=compute_60,code=compute_60")
 list(APPEND CUDA_NVCC_FLAGS "-gencode=arch=compute_61,code=compute_61")
 list(APPEND CUDA_NVCC_FLAGS "-gencode=arch=compute_62,code=compute_62")
+list(APPEND CUDA_NVCC_FLAGS "-gencode=arch=compute_70,code=compute_70")
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
